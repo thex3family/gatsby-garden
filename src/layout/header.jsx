@@ -14,7 +14,7 @@ import {
 } from '../utils/menu-structure'
 
 import DarkMode from '../components/dark-mode'
-import logo from '../../public/img/whiteCircleBack-64x64.png'
+import logo from '../../static/img/whiteCircleBack-64x64.png'
 
 export default function Header({ title, type, description }) {
   const menu = DefaultMenuStructure('header')
