@@ -1,30 +1,39 @@
 module.exports = {
-  // pathPrefix: `/notes`, // If your Digital Garden is not published at the root of your website, use this.
-  siteMetadata: {
-    title: `Gatsby Garden`,
-    description: `A Digital Garden Tended by Gatsby`,
+  // this is needed for tailwind css
 
-    // siteUrl: `https://yoursite.com/notes/`, // URL at which your site will be published. This should be present if you want RSS feed.
-    // headerMenu: [ // Top Navbar items
-    //   {type: 'page', item: '', title: 'Home'}, // Type can be 'page', 'note', 'tag', or 'link'
-    //   {type: 'page', item: 'sitemap', title: 'Sitemap'},
-    //   {type: 'page', item: 'rss.xml', title: 'RSS'},
-    //   {
-    //     type: 'page', item: 'tags', title: 'Tags',
-    //     menu: [ // Only one level depth, please.
-    //       {type: 'tag',item: 'zettelkasten'},
-    //       {type: 'tag',item: 'philosophy'},
-    //       {type: 'tag',item: 'psychology'},
-    //       {type: 'tag',item: 'rationality'},
-    //     ]
-    //   },
-    // ],
+  // content: [
+  //   "./src/**/*.{js,jsx,ts,tsx}",
+  // ],
+  // theme: {
+  //   extend: {},
+  // },
+  // pathPrefix: `/notes`, // If your Digital Garden is not published at the root of your website, use this.
+  
+  siteMetadata: {
+    title: `Evergreen Notes`,
+    description: `A Digital Garden Tended by The Co-x3 Family`,
+
+    siteUrl: `https://notes.x3.family`, // URL at which your site will be published. This should be present if you want RSS feed.
+    headerMenu: [ // Top Navbar items
+      {type: 'page', item: '', title: 'Home'}, // Type can be 'page', 'note', 'tag', or 'link'
+      {type: 'page', item: 'sitemap', title: 'Sitemap'},
+      {type: 'page', item: 'rss.xml', title: 'RSS'},
+      {
+        type: 'page', item: 'tags', title: 'Areas',
+        menu: [ // Only one level depth, please.
+          {type: 'tag',item: 'Knowledge'},
+          {type: 'tag',item: 'Sharing'},
+          {type: 'tag',item: 'Without Borders'},
+        ]
+      },
+    ],
 
     // menu: [ // This is the Table of Contents that comes in the home page if a Home Note is not specified. It can be much longer than the header menu.
     //   ... Same structure as headerMenu. You can have any depth level - multiple menus can be nested.
     // ]
   },
   plugins: [
+    'gatsby-plugin-postcss',
     `gatsby-plugin-sharp`,
     `gatsby-remark-images`,
     `gatsby-plugin-remove-trailing-slashes`,
