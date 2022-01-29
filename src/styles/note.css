@@ -27,7 +27,10 @@
 .note-graph,
 .note-meta,
 .note-content {
-  margin: 10px;
+  /* margin: 10px; */
+  margin: 10px 0;
+  line-height: 2;
+
 }
 
 .note-content img {

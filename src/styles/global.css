@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* base */
+@import "./style.css";
+@import "./bulma.css";
+@import "./custom.css";
+@import "./highlight.css";
+@import "./util.css";
+
+
+/* components */
+@import "./graph.css";
+@import "./index.css";
+@import "./note.css";
+@import "./pager.css";
+@import "./search.css";
+@import "./tag-list.css";
+@import "./variables.css";
+
+
