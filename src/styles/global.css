@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 /* base */
-@import "./style.css";
-@import "./bulma.css";
-@import "./custom.css";
-@import "./highlight.css";
-@import "./util.css";
+@import "./common/style.css";
+@import "./common/bulma.css";
+@import "./common/custom.css";
+@import "./common/highlight.css";
+@import "./common/util.css";
+@import "./common/style.css";
 
 
 /* components */
